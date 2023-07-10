@@ -8,7 +8,7 @@ namespace R5T.T0173
     [FunctionalityMarker]
     public partial interface IStringOperator : IFunctionalityMarker
     {
-        public DescriptionXml ToDescriptionXml(string value)
+        public IDescriptionXml ToDescriptionXml(string value)
         {
             var output = new DescriptionXml(value);
             return output;
